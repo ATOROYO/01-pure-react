@@ -13,7 +13,13 @@
 
     <script>
       function App() {
-        return React.createElement("header");
+        const time = new Date().toLocaleTimeString();
+
+        return React.createElement(
+          "header",
+          null,
+          `Hello Pure React it's ${time}`
+        );
       }
 
       const root = ReactDOM.createRoot(document.getElementById("root"));
